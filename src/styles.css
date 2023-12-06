@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap");
+
+html {
+  /* font-family: "Inter", sans-serif; */
+  font-size: 62.5%; /* base of 10 */
+  /* font-family: "Lato", sans-serif; */
+  font-family: "Noto Sans", sans-serif;
+  color: #2b3b33;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Young Serif", serif; */
+}
+
+body {
+  font-size: 1.6rem;
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Noto Sans", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Young Serif", serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.8rem;
+  line-height: 1.2rem;
+}
+
+input {
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  border: 2px solid #bbb;
+  font-family: Rubik;
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+  margin-right: 0.8rem;
+}
+/* https://colorhunt.co/palette/df826cf8ffd2d0f2888adab2 */
+button {
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  border: 2px solid #77ad92;
+  font-size: 1.6rem;
+  background-color: #8adab2;
+  font-family: Rubik;
+  font-weight: 500;
+  color: #2b3b33;
+}
