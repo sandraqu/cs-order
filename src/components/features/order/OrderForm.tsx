@@ -5,7 +5,7 @@ interface HandleChange {
   (e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
-const PanelRequestForm = ({
+const OrderForm = ({
   data,
 }: {
   data: {
@@ -81,4 +81,4 @@ const PanelRequestForm = ({
   );
 };
 
-export default PanelRequestForm;
+export default OrderForm;

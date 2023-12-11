@@ -1,6 +1,5 @@
-import PanelRequestForm from "../order/PanelRequestForm";
+import OrderForm from "./OrderForm";
 import { panelRequest } from "./helpers";
-// import PanelRequestForm from "./PanelRequestForm";
 
 const GLUCOSE_PANEL_LABEL_TEXT: string = "Need Glucose panels?";
 const KETONE_PANEL_LABEL_TEXT: string = "Need Ketone panels?";
@@ -29,7 +28,7 @@ export default function Order() {
   return (
     <div className="order">
       <h2>Request</h2>
-      <PanelRequestForm data={PANEL_DATA} />
+      <OrderForm data={PANEL_DATA} />
       <h2>Shipping</h2>
       <ul>
         <li>Combo: {res.combo_boxes}</li>
