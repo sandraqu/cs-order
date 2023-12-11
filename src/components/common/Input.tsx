@@ -27,7 +27,7 @@ const Input = ({
         onChange={handleChange}
         {...props}
       />
-      console.log(...props)
+      {/* console.log(...props) */}
       {/* {props.max && <button>Add 100</button>} */}
     </>
   );

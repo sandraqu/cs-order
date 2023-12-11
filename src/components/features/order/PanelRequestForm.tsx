@@ -1,22 +1,22 @@
 import React, { useState } from "react";
-import Input from "../Components/Input";
+import Input from "../../common/Input";
 
 interface HandleChange {
   (e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
-interface PanelRequest {
-  (
-    g: number,
-    k: number,
-  ): {
-    combo_boxes: number;
-    glucose_boxes: number;
-    ketone_boxes: number;
+const PanelRequestForm = ({
+  data,
+}: {
+  data: {
+    panels: {
+      name: string;
+      label: string;
+      placeholder: string;
+      orderQuantity: number;
+    }[];
   };
-}
-
-const PanelRequestForm = ({ data }: Record<string, unknown>) => {
+}) => {
   const [formData, setFormData] = useState(data);
 
   const handleChange: HandleChange = (e) => {

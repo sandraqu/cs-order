@@ -1,5 +1,6 @@
-import "./styles.css";
+import PanelRequestForm from "../order/PanelRequestForm";
 import { panelRequest } from "./helpers";
+// import PanelRequestForm from "./PanelRequestForm";
 
 const GLUCOSE_PANEL_LABEL_TEXT: string = "Need Glucose panels?";
 const KETONE_PANEL_LABEL_TEXT: string = "Need Ketone panels?";
