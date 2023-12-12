@@ -5,30 +5,36 @@ interface HandleChange {
   (e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
+interface PanelProps {
+  name: string;
+  label: string;
+  placeholder: string;
+  orderQuantity: number;
+}
+
+interface PanelsProps {
+  panels: PanelProps[];
+}
+
 const OrderForm = ({
   data,
 }: {
   data: {
-    panels: {
-      name: string;
-      label: string;
-      placeholder: string;
-      orderQuantity: number;
-    }[];
+    panels: PanelProps[];
   };
 }) => {
   const [formData, setFormData] = useState(data);
 
   const handleChange: HandleChange = (e) => {
     const { name, max, value } = e.target;
+    const { panels }: PanelsProps = formData;
 
-    const updatedData = formData.panels.map((panel) => {
+    const updatedData = panels.map((panel: PanelProps) => {
       const toNumberValue = Number(value.replace(/\D/, ""));
 
       if (max) {
         // D will match non-digits and wipe them out preventing NaN
         const toNumberMax = Number(max);
-
         if (toNumberValue > toNumberMax) {
           console.log("100 is the most panels you may order");
           return panel;
