@@ -23,7 +23,7 @@ const OrderForm = ({
     panels: PanelProps[];
   };
 }) => {
-  const [formData, setFormData] = useState(data);
+  const [formData, setFormData] = useState<PanelsProps>(data);
 
   const handleChange: HandleChange = (e) => {
     const { name, max, value } = e.target;
